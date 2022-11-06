@@ -1,0 +1,20 @@
+ender 'shared/errors',resource: @test %>
+<p>
+  <%= form.label :title %>
+  <%= form.text_field :title %>
+</p>
+
+<p>
+  <%= form.label :level %>
+  <%= form.text_field :level %>
+</p>
+
+<p>
+  <%= form.label :category_id %>
+  <%= form.collection_select :category_id, Category.all, :id, :title, promp: true %>
+</p>
+
+<p>
+  <% form.submit %>
+</p>
+<% end %>
