@@ -1,0 +1,14 @@
+.flash.notace {
+  border-color: blue;
+}
+
+.flash.alert {
+  border-color: green;
+}
+
+.flash {
+	border: 2px solid ;
+	padding: 10px ;
+	display: inline-block;
+	border-radius: 5px;
+}
