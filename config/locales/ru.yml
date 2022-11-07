@@ -1,0 +1,56 @@
+ru:
+  helpers:
+    select:
+      prompt: Выберите категорию
+    submit:
+      test:
+        create: 'Создать тест'
+        update: 'Обновить тест'
+
+    label:
+      test:
+        title: 'Название'
+        level: 'Уровень'
+        category_id: 'Категория'
+
+  shared:
+    errors:
+      header:
+        few: "Обнаружено %{count} ошибки"
+        many: "Обнаружено %{count} ошибок"
+        one: "Обнаружена %{count} ошибка"
+        orther: "Обнаружено %{count} ошибки"
+
+
+  tests:
+    index:
+      header: 'Все тесты'
+    test:
+      level: 'Уровень: %{level}'
+      actiions: 'Meтоды: %{actions}'
+      title: 'Тест: %{title}'
+
+  admin: 
+    tests:
+      create: 
+        success: 'Тест успешно создан'
+      index:
+        header: 'Все тесты'
+        title: 'Тест %{title}'
+        level: 'Уровень %{level}'
+        actions: 'Методы %{actions}'
+      edit: 
+        header: 'Tест %{title}'
+      new:
+        header: 'Tест %{title}'
+      show: 
+        category: 'Категория %{title}'
+        header: 'Тест %{title}'
+        level: 'Уровень %{level}'
+
+        questions:
+          header: 'Все вопросы'
+
+  tests_mailer:
+    completed_test:
+      subject: "Вы успешно завершили тест на TestGuru"

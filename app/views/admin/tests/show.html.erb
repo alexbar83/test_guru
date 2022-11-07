@@ -1,20 +1,21 @@
+<p><%= @test.category.persisted? ? t('.category', title: @test.category.title) : nil %></p>
 <p>
-  <h2>Title</h2>
+  <h2><%= t('.header', title: @test.title) %></h2>
   <%= @test.title %>
 </p>
 
 <p>
-  <h2>Level</h2>
+  <h2><%= t('.level', level: @test.level) %></h2>
   <%= @test.level %>
 </p>
 
-<h2>Questions</h2>
+<h2><%= t('.questions.header', title: nil)%></h2>
 
-<%= link_to "New question", new_test_question_path(@test) %>
+<%= link_to 'new question', new_test_question_path(@test) %>
 
 <ul>
   <%= render @test.questions %>
 </ul>
 
-<%= link_to "Edit", edit_admin_test_path %>
-<%= link_to "Back", admin_tests_path %> 
+<%= link_to 'edit', edit_admin_test_path %>
+<%= link_to 'back', admin_tests_path %> 
