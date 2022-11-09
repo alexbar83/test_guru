@@ -1,12 +1,12 @@
-<h1>Tests</h1>
+<h1><%= t('.header') %></h1>
 
-<p><%= link_to "new test", new_admin_test_path %></p>
+<p><%= link_to 'create', new_admin_test_path %></p>
 
 <table>
   <tr>
-    <th>title</th>
-	<th>level</th>
-	<th colspan="4">Actions</th>
+    <th><%= t('.title', title: @test.title) %></th>
+	  <th><%= t('.level', level: @test.level) %></th>
+	  <th colspan="4"><%= t('.actions', actions: @test.actions) %></th>
   </tr>
 
   <tbody>
