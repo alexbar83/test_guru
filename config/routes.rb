@@ -1,8 +1,7 @@
 Rails.application.routes.draw do
- 
-   root to: 'tests#index'
+  root to: 'tests#index'
 
-  devise_for :users, path: :gurus, path_names: { sign_in: :login, sign_out: :logout}
+  devise_for :users, path: :gurus, path_names: { sign_in: :login, sign_out: :logout }
 
   resources :tests, only: :index do
     resources :questions, shallow: true, except: :index do
@@ -15,7 +14,7 @@ Rails.application.routes.draw do
     get :result, on: :member
   end
 
-  namespace :admin do 
+  namespace :admin do
     resources :tests
   end
 end

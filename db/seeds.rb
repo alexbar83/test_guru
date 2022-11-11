@@ -5,9 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-users = User.create([{ first_name: 'Alex', last_name: 'Petrov' ,email: ""},
-                     { first_name: 'Dmitry', last_name: 'Ivanov', email: ""},
-                     { first_name: 'Pavel', last_name: 'Zudov' ,email: ""}])
+users = User.create([{ first_name: 'Alex', last_name: 'Petrov', email: '' },
+                     { first_name: 'Dmitry', last_name: 'Ivanov', email: '' },
+                     { first_name: 'Pavel', last_name: 'Zudov', email: '' }])
 
 categories = Category.create([{ title: 'Geografy' },
                               { title: 'History' },
@@ -45,4 +45,3 @@ answers = Answer.create([{ body: 'Австралия', correct: true, question: 
                          { body: '2 + 2 = 4', question: questions[4] },
                          { body: 'a**2 + b**2 = c**2', correct: true, question: questions[4] },
                          { body: 'E = mc**2', question: questions[4] }])
-                         

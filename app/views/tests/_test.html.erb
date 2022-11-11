@@ -1,7 +1,12 @@
-<tr>
-  <td><%= test.title %></td>
-  <td><%#= test_level(test) %></td>
-  <td><%= test.questions.count %></td>
+<div class="col col-sm-12 col-lg-3 col-md-4 mb-3">
+  <div class="test-card card">
+    
+    <tr>
+      <td><%= test.title %></td>
+      <td><%= test_level(test) %></td>
+      <td><%= test.questions.count %></td>
 
-  <td><%= button_to "Start", start_test_path(test) %></td>
-</tr> 
+      <td><%= button_to "Start", start_test_path(test), class: 'btn btn-primary' %></td>
+    </tr> 
+  </div>
+</div>
