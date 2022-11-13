@@ -1,8 +1,8 @@
-require "test_helper"
+require 'test_helper'
 
 class TestsMailerTest < ActionMailer::TestCase
-  def completed_test 
-    test_passage = TestPassage.new(user: User.first, test: Test.first) 
+  def completed_test
+    test_passage = TestPassage.new(user: User.first, test: Test.first)
 
     TestMailer.completed_test(test_passage)
   end

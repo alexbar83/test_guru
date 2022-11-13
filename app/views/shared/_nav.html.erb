@@ -1,0 +1,20 @@
+<nav class="navbar navbar-light bg-info">
+  <span class="navbar-text">
+    <% if current_user.try(:admin?) %> 
+      <%= link_to "Admin Panel", admin_tests_path, class: 'navbar-brand' %> 
+    <% else %>
+      <%= link_to "TestGuru", root_path, class: 'navbar-brand' %> 
+    <% end %>
+  </span>
+
+  <span class="navbar-text">
+    <% if user_signed_in? %>
+      Welcome, <b><%= current_user.email %></b> Guru | 
+      <%= link_to "logout", destroy_user_session_path, method: :delete %> 
+    <% else %>
+      <%= link_to "logo in", new_session_path(resource_name) %> 
+      <%= link_to "Sigh up", new_registration_path(resource_name) %> 
+    <% end %>
+  </span>
+</nav>
+ 

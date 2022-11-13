@@ -1,5 +1,4 @@
 class Admin::TestsController < Admin::BaseController
-  
   before_action :set_test, only: %i[show start edit update destroy]
 
   def show; end
@@ -27,7 +26,7 @@ class Admin::TestsController < Admin::BaseController
 
     if @test.save
       redirect_to [:admin, @test], notice: t('success')
-          else
+    else
       render :new
     end
   end
