@@ -26,7 +26,21 @@ en:
       actiions: 'Actions: %{actions}'
       title: 'Тest: %{title}'
 
-  admin: 
+  test_passages:
+    gist:
+      success: 'Gist was successfully created! '
+      failure: 'An error occurred while saving gist!'
+  
+  gist_question_service:
+    gist_params:
+      discription: "A question about %{title} from TestGuru"
+
+  admin:
+    gists:
+      index:
+        hash: 'Gist URL'
+        link: 'Question'
+        user: 'User' 
     tests:
       create: 
         success: 'Tests created successful'

@@ -21,6 +21,10 @@ ru:
         one: "Обнаружена %{count} ошибка"
         orther: "Обнаружено %{count} ошибки"
 
+  test_passages:
+    gist:
+      success: 'Gist успешно создан! '
+      failure: 'Во время сохранения gist произошла ошибка!'   
 
   tests:
     index:
@@ -29,8 +33,18 @@ ru:
       level: 'Уровень: %{level}'
       actiions: 'Meтоды: %{actions}'
       title: 'Тест: %{title}'
-
+  
+  gist_question_service:
+    gist_params:
+      discription: "Вопрос %{title} из TestGuru"
+  
   admin: 
+    gists:
+      index:
+        hash: 'Gist URL'
+        link: 'Вопрос'
+        user: 'Пользователь'
+
     tests:
       create: 
         success: 'Тест успешно создан'
