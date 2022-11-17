@@ -1,10 +1,9 @@
 class OctokitClient 
   ROOT_ENDPOINT = "http://octokit.github.io/"
   ACCESS_TOKEN = ENV['OCTOKIT_TOKEN']
-  #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
-
+  
   def initialize
-  	@http_client = setup_http_client
+    @http_client = setup_http_client
   end
 
   def create_gist(params)
