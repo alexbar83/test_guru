@@ -1,23 +1,15 @@
-  class Admin::GistsController < Admin::BaseController
+class Admin::GistsController < Admin::BaseController
+  result = GistQuestionService.new(@test_passage.current_question).call
 
-  before_action :set_gists, only: :index
-  before_action :set_gist, only: :destroy
+  def create 
+    @gist = current_user.gists.new(question: @test_passage.current_question, gist_url: result.html_url)
 
-  def index; end
-
-  def destroy
-    @gist.destroy
-
-    redirect_to admin_gists_path
-  end
-
-  private
-
-  def set_gists
-    @gists = Gist.all
-  end
-
-  def set_gist
-    @gist = Gist.find(params[:id])
+    flash_options = if @gist.save
+      flash[:notice] = t('.success')
+    else
+      flash[:alert] = t('.failure')
+    end
+    
+    redirect_to @test_passage, flash_options
   end
 end
