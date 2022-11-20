@@ -1,8 +1,13 @@
 class Admin::GistsController < Admin::BaseController
-  result = GistQuestionService.new(@test_passage.current_question).call
+  
 
   def create 
-    @gist = current_user.gists.new(question: @test_passage.current_question, gist_url: result.html_url)
+    service = GistQuestionService.new(current_question) 
+
+    result =  service.call
+    if service.success?
+
+    @gist = current_user.gists.new(question: current_question, gist_url: result.html_url)
 
     flash_options = if @gist.save
       flash[:notice] = t('.success')
@@ -10,6 +15,6 @@ class Admin::GistsController < Admin::BaseController
       flash[:alert] = t('.failure')
     end
     
-    redirect_to @test_passage, flash_options
+    redirect_to admin_gists_path, flash_options
   end
 end
