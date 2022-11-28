@@ -29,7 +29,7 @@ ru:
   tests:
     index:
       header: 'Все тесты'
-    test:
+    #test:
       level: 'Уровень: %{level}'
       actiions: 'Meтоды: %{actions}'
       title: 'Тест: %{title}'

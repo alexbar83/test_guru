@@ -21,7 +21,7 @@ en:
   tests:
     index:
       header: 'All tests'
-    test:
+    #test:
       level: 'Level: %{level}'
       actiions: 'Actions: %{actions}'
       title: 'Тest: %{title}'
@@ -63,4 +63,4 @@ en:
 
     tests_mailer:
       completed_test:
-        subject: "You just completed TestGuru test!
+        #subject: "You just completed TestGuru test!

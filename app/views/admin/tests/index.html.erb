@@ -4,10 +4,11 @@
 
 <table>
   <tr>
-    <th><%= t('.title', title: @test.title) %></th>
-	  <th><%= t('.level', level: @test.level) %></th>
-	  <th colspan="4"><%= t('.actions', actions: @test.actions) %></th>
+    <th>title</th>
+    <th>level</th>
+    <th colspan="4">Actions</th>
   </tr>
+  
 
   <tbody>
   	<%= render @tests %>

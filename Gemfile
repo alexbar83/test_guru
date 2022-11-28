@@ -34,6 +34,8 @@ gem 'rails-i18n', '~> 6.0.0'
 gem 'bootstrap', '~> 4.0.0.beta'
 gem 'jquery-rails'
 
+gem 'letter_opener'
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
