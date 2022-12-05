@@ -7,6 +7,7 @@ class Admin::AnswersController < Admin::BaseController
   def edit; end
 
   def new
+    
     @answer = @question.answers.new
   end
 
