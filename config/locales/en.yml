@@ -21,12 +21,27 @@ en:
   tests:
     index:
       header: 'All tests'
-    test:
+    #test:
       level: 'Level: %{level}'
       actiions: 'Actions: %{actions}'
       title: 'Тest: %{title}'
 
-  admin: 
+  test_passages:
+    gist:
+      success: 'Gist was successfully created! '
+      failure: 'An error occurred while saving gist!'
+      fail: "No service"
+  
+  gist_question_service:
+    gist_params:
+      discription: "A question about %{title} from TestGuru"
+
+  admin:
+    gists:
+      index:
+        hash: 'Gist URL'
+        link: 'Question'
+        user: 'User' 
     tests:
       create: 
         success: 'Tests created successful'
@@ -49,4 +64,4 @@ en:
 
     tests_mailer:
       completed_test:
-        subject: "You just completed TestGuru test!
+        #subject: "You just completed TestGuru test!

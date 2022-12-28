@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.7.6'
-
+gem 'dotenv-rails', groups: [:development, :test]
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.7'
 # Use sqlite3 as the database for Active Record
@@ -23,10 +23,19 @@ gem 'jbuilder', '~> 2.7'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'devise', '~> 4.0'
 
+gem "faraday"
+
+gem 'dotenv-rails' 
+
+gem "octokit", "~> 4.15"
+
 gem 'rails-i18n', '~> 6.0.0'
 
 gem 'bootstrap', '~> 4.0.0.beta'
+
 gem 'jquery-rails'
+
+gem 'letter_opener'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
