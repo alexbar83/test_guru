@@ -24,7 +24,8 @@ ru:
   test_passages:
     gist:
       success: 'Gist успешно создан! '
-      failure: 'Во время сохранения gist произошла ошибка!'   
+      failure: 'Во время сохранения gist произошла ошибка!'
+      fail: "Сервис отсутствует"   
 
   tests:
     index:

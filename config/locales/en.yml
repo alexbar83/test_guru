@@ -30,6 +30,7 @@ en:
     gist:
       success: 'Gist was successfully created! '
       failure: 'An error occurred while saving gist!'
+      fail: "No service"
   
   gist_question_service:
     gist_params:

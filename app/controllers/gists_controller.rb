@@ -16,7 +16,9 @@ class GistsController < ApplicationController
         flash[:alert] = t('.failure')
       end
     
-      redirect_to admin_gists_path
+      redirect_to admin_gists_path 
+    else 
+      flash[:alert] = t('.fail')
     end
   end
 end
