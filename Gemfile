@@ -32,6 +32,7 @@ gem "octokit", "~> 4.15"
 gem 'rails-i18n', '~> 6.0.0'
 
 gem 'bootstrap', '~> 4.0.0.beta'
+gem 'octicons_helper'
 
 gem 'jquery-rails'
 

@@ -6,11 +6,13 @@ Rails.application.routes.draw do
 
   resources :tests, only: :index do
     resources :questions, shallow: true, except: :index do
-      resources :gists, shallow: true,
+      resources :gists, shallow: true
       resources :answers, shallow: true, except: :index
+    
     end
     post :start, on: :member
-  end
+  
+end
 
   resources :test_passages, only: %i[show update] do
     member do
